@@ -77,9 +77,12 @@ public class JurosSServlet extends HttpServlet {
               
             
             out.println("</div>");
+            out.println("<div class=\"col-md-6\">");
+             out.println("<h2>Resultado da Operação</h2><br><br>");
+            out.println("<h2 style=\"padding-bottom:8px;\">Juros Simples: "+juros+"</h2>");
             out.println("</div>");
             out.println("</div>");
-            out.println("<h2>Juros Simples: "+juros+"</h2>");
+            out.println("</div>");
                       
             
                      

@@ -17,8 +17,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author usuario
  */
-@WebServlet(name = "JurosSServlet", urlPatterns = {"/jurossimples.php"})
-public class JurosSServlet extends HttpServlet {
+@WebServlet(name = "HomeServlet", urlPatterns = {"/home.php"})
+public class HomeServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -37,20 +37,19 @@ public class JurosSServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet JurosSServlet</title>");            
+            out.println("<title>Projeto 01</title>");            
+            out.println("<meta charset='UTF-8'>");            
+            out.println("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">");            
+            out.println("<link href=\"estilo.css\" rel=\"stylesheet\">");            
+            out.println("<link href=\"bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\">");            
             out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet JurosSServlet at " + request.getContextPath() + "</h1>");
-            
-            double capital = Double.parseDouble(request.getParameter("capital"));
-            double taxa = Double.parseDouble(request.getParameter("taxa"));
-            double tempo = Double.parseDouble(request.getParameter("tempo"));
-            
-            double juros = capital*taxa*tempo;
-            
-            out.println("Juros Simples: "+juros);
+            out.println("<body style=\"background:#1b6d85;text-align:center;\">");
+            out.println("<a href=\"jurossimples.php\" class=\"btn botao-form\">Juros Composto</a>");
+            out.println("<a href=\"juroscomposto.php\" name=\"btnCalculaS\" class=\"btn botao-form\">Juros Simples</a>");
             out.println("</body>");
-            out.println("</html>");
+            out.println("</html>");            
+            
+
         }
     }
 

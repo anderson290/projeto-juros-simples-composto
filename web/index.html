@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Projeto 01</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="estilo.css" rel="stylesheet">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+         <section id="formulario">
+      <div class="container">
+        <div class="form">
+            <div class="row">          
+              <div class="col-md-6">
+                <h1>Projeto 01</h1>
+                <h3>Juros Simples e Juros Compostos</h3>
+                <p>Utilize o formulário ao lado para efetuar seus cálculos.</p>
+                    
+                     
+
+              </div>
+              <div class="col-md-6" id="dados">
+               
+               <form method="POST" action="enviarForm.php" name="formEmail">
+                  <h2>Insira os valores</h2>
+                  <!--Form control formata os inputs pelo bootstrap-->
+                 
+                  <div class="col-md-4">
+
+                    <div class="form-group">
+                      <label for="capital">Capital</label>
+                      <input type="number" name="capital" class="form-control" />
+                    </div>
+
+                </div>
+                  
+                  <div class="col-md-4">
+
+                    <div class="form-group">
+                      <label for="taxa">Taxa</label>
+                      <input type="number" name="taxa" class="form-control"/>
+                    </div>
+
+                </div>
+                  
+                  <div class="col-md-4">
+
+                    <div class="form-group">
+                      <label for="tempo">Tempo</label>
+                      <input type="number" name="tempo" class="form-control"/>
+                    </div>
+
+                </div>
+
+                  
+                  <div class="col-md-12">
+                    
+                    
+                    <button type="submit" name="btnCalculaC" class="btn botao-form">Juros Composto</button>
+                    <button type="submit" name="btnCalculaS" class="btn botao-form">Juros Simples</button>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+          </div>     
+    </div>
+  </section>
+    </body>
+</html>

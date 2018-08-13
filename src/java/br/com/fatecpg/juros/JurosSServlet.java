@@ -69,6 +69,7 @@ public class JurosSServlet extends HttpServlet {
             );
             out.println("<a href=\"home.php\" name=\"btnVoltar\" class=\"btn botao-form\">Voltar</a>");
             double capital = Double.parseDouble(request.getParameter("capital"));
+           
             double taxa = Double.parseDouble(request.getParameter("taxa"));
             double tempo = Double.parseDouble(request.getParameter("tempo"));
             

@@ -34,7 +34,7 @@ public class JurosSServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-              out.println("<!DOCTYPE html>");
+            out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Projeto 01</title>");            
@@ -44,6 +44,7 @@ public class JurosSServlet extends HttpServlet {
             out.println("<link href=\"bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\">");            
             out.println("</head>");
             out.println("<body style=\"background:#1b6d85;text-align:center;color:white;\">");
+            out.println("<h2>Juros Simples</h2>");
             out.println("<div class=\"form\">");
             out.println("<form>\n" +
                     "<div class=\"col-md-6\">\n" +

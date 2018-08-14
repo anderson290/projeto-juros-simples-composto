@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author usuario
  */
-@WebServlet(name = "JurosSServlet", urlPatterns = {"/jurossimples.php"})
+@WebServlet(name = "JurosSServlet", urlPatterns = {"/juros-simples"})
 public class JurosSServlet extends HttpServlet {
 
     /**
@@ -67,7 +67,7 @@ public class JurosSServlet extends HttpServlet {
                     "<input type=\"submit\" class=\"btn botao-form\" value=\"Calcular\">"
                     
             );
-            out.println("<a href=\"home.php\" name=\"btnVoltar\" class=\"btn botao-form\">Voltar</a>");
+            out.println("<a href=\"home\" name=\"btnVoltar\" class=\"btn botao-form\">Voltar</a>");
             double capital = Double.parseDouble(request.getParameter("capital"));
            
             double taxa = Double.parseDouble(request.getParameter("taxa"));

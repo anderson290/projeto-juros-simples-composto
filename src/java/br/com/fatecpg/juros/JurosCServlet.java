@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author usuario
  */
-@WebServlet(name = "JurosCServlet", urlPatterns = {"/juroscomposto.php"})
+@WebServlet(name = "JurosCServlet", urlPatterns = {"/juros-composto"})
 public class JurosCServlet extends HttpServlet {
 
     /**
@@ -51,8 +51,8 @@ public class JurosCServlet extends HttpServlet {
                     "<h3>Insira seus dados</h3>\n" +        
                     "<div class=\"col-md-4\">\n" +                    
                     "<div class=\"form-group\">\n" +
-                    "<label for=\"nomeL\">Taxa:</label>\n" +
-                    "<input type=\"number\" name=\"taxa\" class=\"form-control\">\n"+
+                    "<label for=\"taxa  \">Taxa:</label>\n" +
+                    "<input type=\"text\" name=\"taxa\" class=\"form-control\">\n"+
                     "</div></div>\n"+
                     "<div class=\"col-md-4\">\n" +
                     "<div class=\"form-group\">\n" +
@@ -67,7 +67,7 @@ public class JurosCServlet extends HttpServlet {
                     "<input type=\"submit\" class=\"btn botao-form\" value=\"Calcular\">"
                     
             );
-            out.println("<a href=\"home.php\" name=\"btnVoltar\" class=\"btn botao-form\">Voltar</a>");
+            out.println("<a href=\"home\" name=\"btnVoltar\" class=\"btn botao-form\">Voltar</a>");
             double capital = Double.parseDouble(request.getParameter("capital"));
             double taxa = Double.parseDouble(request.getParameter("taxa"));
             double tempo = Double.parseDouble(request.getParameter("tempo"));

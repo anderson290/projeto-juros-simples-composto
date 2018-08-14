@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author usuario
  */
-@WebServlet(name = "HomeServlet", urlPatterns = {"/home.php"})
+@WebServlet(name = "HomeServlet", urlPatterns = {"/home"})
 public class HomeServlet extends HttpServlet {
 
     /**
@@ -45,8 +45,8 @@ public class HomeServlet extends HttpServlet {
             out.println("</head>");
             out.println("<body style=\"background:#1b6d85;text-align:center;\">");
             out.println("<h2 style=\"color:white;\">Escolha a opção de Cálculo:</h2>");
-            out.println("<a href=\"jurossimples.php\" class=\"btn botao-form\">Juros Simples</a>");            
-            out.println("<a href=\"juroscomposto.php\" name=\"btnCalculaS\" class=\"btn botao-form\">Juros Composto</a>");
+            out.println("<a href=\"juros-simples\" class=\"btn botao-form\">Juros Simples</a>");            
+            out.println("<a href=\"juros-composto\" name=\"btnCalculaS\" class=\"btn botao-form\">Juros Composto</a>");
             out.println("</body>");
             out.println("</html>");            
             

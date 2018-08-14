@@ -83,12 +83,12 @@ public class JurosCServlet extends HttpServlet {
                 out.println("<table class=\"table table-bordered table-condensed\">\n" +
                             "<thead>\n" +
                             "          <tr>\n" +
-                            "            <th>Montante</th>\n" +
-                            "            <th>Juros</th>\n" +
-                            "         <th>Tempo</th>\n" +
+                            "          <th>Montante</th>\n" +
+                            "          <th>Juros</th>\n" +
+                            "          <th>Tempo</th>\n" +
                             "          </tr>\n" +
-                            "        </thead>\n" +
-                            "        <tbody>\n");
+                            "          </thead>\n" +
+                            "          <tbody>\n");
                         
                             out.println("<tr>\n");
                             for(int i=0; i<tempo;i++){
